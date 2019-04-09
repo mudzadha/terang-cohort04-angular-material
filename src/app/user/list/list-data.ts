@@ -5,7 +5,7 @@ import {Component} from '@angular/core';
   templateUrl : './list-page.html',
 })
 
-export  class ListPage {
+export  class ListData {
   constructor(){
 
   }
