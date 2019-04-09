@@ -7,11 +7,11 @@ import {Router} from '@angular/router';
   templateUrl : './detail-page.html',
 
 })
-export class JokePage implements OnInit,OnDestroy{
+export class DetailPage implements OnInit,OnDestroy{
 
-  joke$ : Observable<Joke>; //TODO i added this
+  detailPage : Observable<Joke>; //TODO i added this
 
-  constructor(private jokeservice :JokeService, private router : Router){
+  constructor(private  :, private router : Router){
 
     this.joke$ = this.jokeservice.findJoke();
     console.log("Constructor is running ...")
