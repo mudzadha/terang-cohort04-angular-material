@@ -13,6 +13,6 @@ export class UserService {
   }
 
   findPhotoById(id: number): Observable<UserID> {
-    return this.http.get<UserID>('https://jsonplaceholder.typicode.com/users');
+    return this.http.get<UserID>('https://jsonplaceholder.typicode.com/users/'+id);
   }
 }
