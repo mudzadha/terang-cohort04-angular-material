@@ -1,36 +1,32 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Observable} from 'rxjs';
-import {Router} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
+import {FormBuilder, FormGroup} from '@angular/forms';
+import {UserService} from '../../../services/user.service';
 
 @Component ( {
-  selector : 'detail-page',
-  templateUrl : './detail-page.html',
+  selector : 'trg-photo-detail',
+  templateUrl : './users-detail.page.html',
+  styleUrls :[ './users-detail.page.scss'],
 
 })
-export class DetailPage implements OnInit,OnDestroy{
+export class UsersDetailPage implements OnInit{
 
-  detailPage : Observable<Joke>; //TODO i added this
+  mainForm: FormGroup;
+  submitted: false;
+  user$ : Observable(User) = null;
 
-  constructor(private  :, private router : Router){
+  constructor(private form: FormBuilder,
+              private userService : UserService,
+              private route :ActivatedRoute
+              ){
 
-    this.joke$ = this.jokeservice.findJoke();
-    console.log("Constructor is running ...")
+    this.route.params.subscribe((param :(id: string)) =>{
+      this.user$ = userService.findPhotoById(param.id)
+    })
 
-    // this.joke$.subscribe(data=>{
-    //   console.log(data)
-    // })
-
-  }
-  goToNextPage(){
-    this.router.navigate(['/academy/apprentices/',new Date().getTime()]);
-    console.log("Push me")
-  }
-
-  ngOnDestroy(): void {
-    console.log("ngOnDestroy is running ...")
   }
   ngOnInit(): void {
-    console.log("ngOnInit is running ...")
-
+    onsubmit((value: any))
   }
-}
+  }
