@@ -5,7 +5,7 @@ import {ApprenticeListPage} from './academy/apprentice-list.page';
 import {CohortListPage} from './academy/cohort-list.page';
 import {ApprenticeDetailPage} from './academy/apprentice-detail.page';
 import {CohortDetailPage} from './academy/cohort-detail.page';
-import {ListPage} from './list/list-page';
+import {ListPage} from './user/list-page';
 
 export const appRoutes: Routes = [{
   path: '', component: MainComponent, children: [
