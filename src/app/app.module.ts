@@ -17,6 +17,7 @@ import {PhotoService} from "../services/photo.service";
 @NgModule({
   declarations: [
     AppComponent,
+    DetailsPage,
   ],
   imports: [
     BrowserModule,
