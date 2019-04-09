@@ -16,7 +16,7 @@ export const appRoutes: Routes = [{
     {path: 'academy/apprentices/list', component: ApprenticeListPage},
     {path: 'academy/apprentices/:code', component: ApprenticeDetailPage},
 
-    {path: 'user/list-page', component: ListPage},
-    {path: 'user/detail/:id', component: DetailPage},
+    {path: 'user/list', component: ListPage},
+    {path: 'user/:id', component: DetailPage},
   ]
 }];
