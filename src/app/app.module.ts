@@ -28,7 +28,7 @@ import {PhotoService} from "../services/photo.service";
     DashboardModule,
     AcademyModule,
   ],
-  providers: [AcademyService, UserService],
+  providers: [AcademyService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
