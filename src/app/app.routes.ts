@@ -5,7 +5,7 @@ import {ApprenticeListPage} from './academy/apprentice-list.page';
 import {CohortListPage} from './academy/cohort-list.page';
 import {ApprenticeDetailPage} from './academy/apprentice-detail.page';
 import {CohortDetailPage} from './academy/cohort-detail.page';
-import {ListPage} from './user/list/list-page';
+import {ListData} from './user/list/list-data';
 import {DetailPage} from "./user/detail/detail-page";
 
 export const appRoutes: Routes = [{
@@ -16,7 +16,7 @@ export const appRoutes: Routes = [{
     {path: 'academy/apprentices/list', component: ApprenticeListPage},
     {path: 'academy/apprentices/:code', component: ApprenticeDetailPage},
 
-    {path: 'user/list-page', component: ListPage},
+    {path: 'user/list-page', component: ListData},
     {path: 'user/detail/:id', component: DetailPage},
   ]
 }];

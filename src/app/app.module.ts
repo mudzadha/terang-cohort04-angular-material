@@ -11,14 +11,14 @@ import {AcademyModule} from './academy/academy.module';
 import {AcademyService} from '../services/academy.service';
 import {DashboardModule} from './dashboard/dashboard.module';
 import {CohortStatusPipe} from './academy/cohort-status.pipe';
-import {ListPage} from './user/list/list-page';
+import {ListData} from './user/list/list-data';
 import {UserService} from '../services/user.service';
 import {DetailPage} from './user/detail/detail-page';
 
 
 @NgModule({
   declarations: [
-    AppComponent,ListPage,DetailPage
+    AppComponent,ListData,DetailPage
   ],
   imports: [
     BrowserModule,
