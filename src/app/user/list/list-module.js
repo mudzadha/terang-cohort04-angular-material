@@ -52,9 +52,7 @@ import {
     ///need to declare somethings
   ],
   exports: [],
-  entryComponents: [
-
-  ]
+  entryComponents: []
 })
 export class ListModule {
 }
