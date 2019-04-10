@@ -14,12 +14,13 @@ import {CohortStatusPipe} from './academy/cohort-status.pipe';
 import {UserService} from '../services/user.service';
 import { UsersDetailPage} from './user/detail/detail-page';
 import {UserDataSource} from './user/user.data-source';
+import {ListPage} from './user/list/list-page';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserDataSource,
+    ListPage,
   ],
   imports: [
     BrowserModule,
