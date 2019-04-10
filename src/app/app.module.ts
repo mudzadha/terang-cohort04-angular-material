@@ -31,7 +31,7 @@ import { UsersDetailPage} from './user/detail/detail-page';
     ListModule,
 
   ],
-  providers: [AcademyService],
+  providers: [AcademyService,UserService,],
   bootstrap: [AppComponent]
 })
 export class AppModule {
