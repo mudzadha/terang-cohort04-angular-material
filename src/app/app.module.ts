@@ -18,7 +18,7 @@ import {ListModule} from "./user/list/list-module";
 
 @NgModule({
   declarations: [
-    AppComponent,UsersDetailPage
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +30,7 @@ import {ListModule} from "./user/list/list-module";
     DashboardModule,
     AcademyModule,
     ListModule,
+    UsersDetailPage
 
   ],
   providers: [AcademyService,UserService,],

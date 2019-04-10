@@ -18,7 +18,7 @@ export class UsersDetailPage implements OnInit{
 
   constructor(private form: FormBuilder,
               private userService : UserService,
-              private route :ActivatedRoute
+              private route : ActivatedRoute
               ){
 
     this.route.params.subscribe((param :(id: string)) =>{
@@ -26,7 +26,7 @@ export class UsersDetailPage implements OnInit{
     })
 
   }
-  ngOnInit(): void {
-    onsubmit((value: any))
+  ngOnInit() {
+  }    onsubmit(value: any){
   }
   }
