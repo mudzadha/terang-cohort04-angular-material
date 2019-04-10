@@ -17,7 +17,7 @@ import { UsersDetailPage} from './user/detail/detail-page';
 
 @NgModule({
   declarations: [
-    AppComponent,UsersDetailPage
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +29,7 @@ import { UsersDetailPage} from './user/detail/detail-page';
     DashboardModule,
     AcademyModule,
     ListModule,
+    UsersDetailPage
 
   ],
   providers: [AcademyService,UserService,],
