@@ -16,7 +16,7 @@ export class ListPage extends DataSource<any>{
   }
 
   connect(): Observable<User[]>{
-    return this.photosService.findPhoto();
+    return this.photosService.findUser();
   }
 
   disconnect(){

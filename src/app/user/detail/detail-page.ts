@@ -18,15 +18,15 @@ export class UsersDetailPage implements OnInit{
 
   constructor(private form: FormBuilder,
               private userService : UserService,
-              private route :ActivatedRoute
+              private route : ActivatedRoute
               ){
 
     this.route.params.subscribe((param :(id: string)) =>{
-      this.user$ = userService.findPhotoById(param.id)
+      this.user$ = userService.findUserByID(param.id)
     })
 
   }
-  ngOnInit(): void {
-    onsubmit((value: any))
+  ngOnInit() {
+  }    onsubmit(value: any){
   }
   }
