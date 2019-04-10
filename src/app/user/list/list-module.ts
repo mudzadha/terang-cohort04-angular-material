@@ -18,9 +18,10 @@ import {
   MatChipsModule,
   MatNativeDateModule,
   MatPaginatorModule, MatSnackBar, MatSnackBarModule,
-  MatSortModule,
+  MatSortModule, MatTableModule,
   MatTooltipModule
 } from '@angular/material';
+import {ListData} from "./list-data";
 
 @NgModule({
   imports: [
@@ -49,7 +50,7 @@ import {
     MatSnackBarModule,
   ],
   declarations: [
-    ///need to declare somethings
+    ListData,
   ],
   exports: [],
   entryComponents: []

@@ -13,6 +13,7 @@ import {DashboardModule} from './dashboard/dashboard.module';
 import {CohortStatusPipe} from './academy/cohort-status.pipe';
 import {UserService} from '../services/user.service';
 import { UsersDetailPage} from './user/detail/detail-page';
+import {ListModule} from "./user/list/list-module";
 
 
 @NgModule({
@@ -36,3 +37,6 @@ import { UsersDetailPage} from './user/detail/detail-page';
 })
 export class AppModule {
 }
+
+// faris - c3
+// mosin - c3, php
