@@ -20,7 +20,6 @@ import {ListPage} from './user/list/list-page';
 @NgModule({
   declarations: [
     AppComponent,
-    ListPage,
   ],
   imports: [
     BrowserModule,

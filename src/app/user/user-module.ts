@@ -23,6 +23,7 @@ import {
 } from '@angular/material';
 import {UserDataSource} from './user.data-source';
 import {UsersDetailPage} from './detail/detail-page';
+import {ListPage} from './list/list-page';
 
 
 
@@ -53,7 +54,7 @@ import {UsersDetailPage} from './detail/detail-page';
     MatSnackBarModule,
   ],
   declarations: [
-    UserDataSource,UsersDetailPage
+    ListPage,UsersDetailPage
   ],
   exports: [],
   entryComponents: []

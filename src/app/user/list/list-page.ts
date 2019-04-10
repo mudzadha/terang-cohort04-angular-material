@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 @Component({
-  selector: 'trg-list',
-  templateUrl: './user/list-page.html',
+  selector: 'trg-list-page',
+  templateUrl: './list-page.html',
 })
 
 

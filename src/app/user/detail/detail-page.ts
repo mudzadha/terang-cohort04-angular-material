@@ -6,9 +6,9 @@ import {UserService} from '../../../services/user.service';
 import {User} from '../user-model';
 
 @Component ( {
-  selector : 'trg-photo-detail',
-  templateUrl : './users-detail.page.html',
-  styleUrls :[ './users-detail.page.scss'],
+  selector : 'trg-detail',
+  templateUrl : './detail-page.html',
+  styleUrls :[ './detail-page.css'],
 
 })
 export class UsersDetailPage implements OnInit{

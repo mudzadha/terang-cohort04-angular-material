@@ -5,7 +5,8 @@ import {ApprenticeListPage} from './academy/apprentice-list.page';
 import {CohortListPage} from './academy/cohort-list.page';
 import {ApprenticeDetailPage} from './academy/apprentice-detail.page';
 import {CohortDetailPage} from './academy/cohort-detail.page';
-import {DetailPage} from "./user/detail/detail-page";
+import { UsersDetailPage} from './user/detail/detail-page';
+import {ListPage} from './user/list/list-page';
 
 export const appRoutes: Routes = [{
   path: '', component: MainComponent, children: [
@@ -16,6 +17,6 @@ export const appRoutes: Routes = [{
     {path: 'academy/apprentices/:code', component: ApprenticeDetailPage},
 
     {path: 'user/list', component: ListPage},
-    {path: 'user/:id', component: DetailPage},
+    {path: 'user/:id', component: UsersDetailPage},
   ]
 }];
